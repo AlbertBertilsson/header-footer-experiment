@@ -29,10 +29,6 @@
 }
 </style>
 
-<script>
-document.getElementById("search-input").focus();
-</script>
-
 <h1>Search</h1>
 
 <div class="history">
