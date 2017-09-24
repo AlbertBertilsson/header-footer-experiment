@@ -24,6 +24,9 @@
     line-height: 40px;
 }
 
+#in-page-search-field {
+    display: none;
+}
 
 @media only screen and (max-width: 500px) {
     .search-field {
