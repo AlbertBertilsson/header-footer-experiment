@@ -1,3 +1,22 @@
+<script>
+function backAway(){
+    if (document.referrer) {
+        //firefox, chrome, etc..
+        i = 0;
+    } else {
+        // under ie
+        i = 1;
+    }
+    if (history.length>i)
+    {
+        // there are items in history property
+        history.back();
+    } else {
+        window.location = '/';
+    }
+    return false;
+}
+</script>
 <style>
 img { height: 30px;
 	padding-right: 10px;
@@ -9,11 +28,16 @@ img { height: 30px;
 	right: 8px;
 	top: 8px;
 }
+
+#close {
+	display:none;
+}
 </style>
 <a href="/"><img id="logo" src="acme-logo.svg"></a>
 <div id="nav">
-<a href="/"><img src="nav-search.svg"></a>
+<a href="/nav.php"><img src="nav-search.svg"></a>
 <a href="/list.php"><img src="nav-shopping-list.svg"></a>
 <a href="/bag.php"><img src="nav-shopping-bag.svg"></a>
-<a href="/menu.php"><img src="nav-menu.svg"></a>
+<a id="menu" href="/menu.php"><img src="nav-menu.svg"></a>
+<a id="close" href="javascript:backAway();"><img src="nav-menu-close.svg"></a>
 </div>
