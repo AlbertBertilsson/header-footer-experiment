@@ -6,6 +6,7 @@ window.onload = function() {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', '/nav.php');
 		xhr.send('');
+		document.body.innerHTML += '<h6>Prefetch successful</h6>';
 	}, 1000);
 };
 </script>
