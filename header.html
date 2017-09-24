@@ -61,10 +61,24 @@ img {
     left: 40px;
 }
 
+#search-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    #search-icon {
+        display: inline-block;
+    }
+
+    .search-field {
+        display: none;
+    }
+}
 </style>
 <a href="/"><img id="logo" src="acme-logo.svg"></a>
 <div id="nav">
 <form class="search-field" action="search.php" method="get" role="search"><input id="search-input" class="search-field__input" placeholder="Search" aria-label="Search" autocomplete="off" type="text" name="query"><button class="search-field__button" aria-label="Search"><img src="nav-search.svg"></button></form>
+<a id="search-icon" href="/search.php"><img src="nav-search.svg"></a>
 <a href="/list.php"><img src="nav-shopping-list.svg"></a>
 <a href="/bag.php"><img src="nav-shopping-bag.svg"></a>
 <a id="menu" href="/nav.php"><img src="nav-menu.svg"></a>
