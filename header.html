@@ -18,7 +18,8 @@ function backAway(){
 }
 </script>
 <style>
-img { height: 30px;
+img {
+    height: 30px;
 	padding-right: 10px;
 
 }
@@ -30,7 +31,11 @@ img { height: 30px;
 }
 
 #close {
-	display:none;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    height: 50px;
 }
 </style>
 <a href="/"><img id="logo" src="acme-logo.svg"></a>
@@ -39,6 +44,6 @@ img { height: 30px;
 <a href="/list.php"><img src="nav-shopping-list.svg"></a>
 <a href="/bag.php"><img src="nav-shopping-bag.svg"></a>
 <a id="menu" href="/nav.php"><img src="nav-menu.svg"></a>
-<a id="close" href="javascript:backAway();"><img src="nav-menu-close.svg"></a>
 </div>
+<a href="javascript:backAway();"><img id="close" src="nav-menu-close.svg"></a>
 
