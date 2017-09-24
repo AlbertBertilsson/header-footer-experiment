@@ -13,6 +13,10 @@
 #close {
 	display: inline;
 }
+
+#menu {
+	display: none;
+}
 </style>
 
 <h1>Navigation</h1>
