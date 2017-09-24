@@ -1,5 +1,5 @@
 <?php
-	header('max-age: 120');
+	header('Cache-Control: max-age=120');
 	sleep(5);
 ?>
 <html>
