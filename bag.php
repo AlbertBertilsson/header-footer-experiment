@@ -4,7 +4,8 @@
 ?>
 <html>
 <head>
-  <title>Test</title>
+  <title>Shopping bag</title>
+  <?php include "head.html"; ?>
 </head>
 <body>
 	<?php include "header.html"; ?>
