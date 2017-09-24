@@ -1,6 +1,5 @@
 <?php
 	header('Cache-Control: max-age=60');
-	sleep(5);
 ?>
 <html>
 <head>
@@ -14,9 +13,6 @@
 #close {
 	display: inline;
 }
-#menu {
-	display: none;
-}
 </style>
 
 <h1>Navigation</h1>
@@ -25,7 +21,7 @@
 </b>
 Small products<br>
 Big products<br>
-<b>About</b>
+<b>About</b><br>
 Stores<br>
 History
 
