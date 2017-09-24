@@ -1,3 +1,6 @@
+<?php
+	include "global.php";
+?>
 <html>
 <head>
   <title>Header footer</title>

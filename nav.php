@@ -1,5 +1,5 @@
 <?php
-	header('Cache-Control: max-age=60');
+	include "global.php";
 ?>
 <html>
 <head>
