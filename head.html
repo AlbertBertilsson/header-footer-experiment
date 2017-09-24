@@ -1,12 +1,2 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<script>
-window.onload = function() {
-	setTimeout(function() {
-		// XHR to request a JS and a CSS
-		var xhr = new XMLHttpRequest();
-		xhr.open('GET', '/nav.php');
-		xhr.send('');
-		document.body.innerHTML += '<h6>Prefetch successful</h6>';
-	}, 1000);
-};
-</script>
+<link rel="preload" href="/nav.php" as="document">
